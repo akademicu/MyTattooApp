@@ -1,7 +1,10 @@
 package com.akademicu.mytattooapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -9,5 +12,16 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+    }
+
+    public void backToHome(View view){
+        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    public void goToSingInAct(View view){
+        Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

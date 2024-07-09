@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyTattooApp</string>
+    <string name="go_to_sing_in">Do not have an account? Sing In</string>
+    <string name="go_to_sing_up">Have an account? Sing Up</string>
 </resources>
