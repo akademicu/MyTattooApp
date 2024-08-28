@@ -40,7 +40,14 @@
             android:layout_width="0dp"
             android:layout_height="50dp"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/sing_in_button"
+        app:layout_constraintTop_toBottomOf="@+id/dont_have_acount_textView"
+        android:layout_margin="10dp"
+        android:text="Sign In"
 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
     <Button
@@ -57,6 +64,7 @@
         android:layout_marginBottom="68dp"/>
 
     <TextView
+        android:id="@+id/dont_have_acount_textView"
         app:layout_constraintTop_toBottomOf="@+id/secondLine"
         android:text="@string/go_to_sing_in"
         android:textSize="20sp"

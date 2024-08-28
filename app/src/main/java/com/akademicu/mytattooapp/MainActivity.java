@@ -7,10 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-
-    Button sing_in, sing_up;
-
-    @Override
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -28,4 +25,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void goToPhotoListActivity(View view){
+        Intent intent = new Intent(MainActivity.this, PhotoListActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
